@@ -1,6 +1,8 @@
 branch-defaults:
-  master:
+  develop:
     environment: blogEnvAws-env
+  master:
+      environment: blog-production
 environment-defaults:
   blogEnvAws-env:
     branch: null
