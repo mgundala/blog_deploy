@@ -1,17 +1,19 @@
 branch-defaults:
   master:
-    environment: blog-env
-    group_suffix: null
+    environment: blogEnvAws-env
+environment-defaults:
+  blogEnvAws-env:
+    branch: null
+    repository: null
 global:
-  application_name: blog
-  branch: null
+  application_name: blog-env-aws
   default_ec2_keyname: null
-  default_platform: Ruby 2.2 (Puma)
+  default_platform: arn:aws:elasticbeanstalk:ap-south-1::platform/Passenger with Ruby
+    2.3 running on 64bit Amazon Linux/2.4.0
   default_region: ap-south-1
   instance_profile: null
   platform_name: null
   platform_version: null
   profile: eb-cli
-  repository: null
   sc: git
   workspace_type: Application
